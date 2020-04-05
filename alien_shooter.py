@@ -18,3 +18,12 @@ while running:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
+
+global gamepad
+global jet
+
+def drawObject(obj,x,y):
+	global gamepad
+	gamepad.blit(obj,(x,y))
+
+drawobject(jet,200,350)
